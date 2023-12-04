@@ -1,0 +1,24 @@
+var numero, i int
+var primo bool
+
+leia("Digite um número: ")
+leia(&numero)
+
+primo = verdadeiro
+
+se numero <= 1 {
+    primo = falso
+} senão {
+    para i = 2; i <= numero/2; i++ {
+        se numero%i == 0 {
+            primo = falso
+            pare
+        }
+    }
+}
+
+se primo {
+    escreva("O número é primo.")
+} senão {
+    escreva("O número não é primo.")
+}
