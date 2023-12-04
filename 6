@@ -1,0 +1,15 @@
+var base, expoente, resultado float64
+
+leia("Digite a base: ")
+leia(&base)
+
+leia("Digite o expoente: ")
+leia(&expoente)
+
+resultado = 1
+
+para i = 1; i <= expoente; i++ {
+    resultado = resultado * base
+}
+
+escreva("O resultado é: ", resultado)
