@@ -1,0 +1,12 @@
+var numero, fatorial, i float64
+
+leia("Digite um número: ")
+leia(&numero)
+
+fatorial = 1
+
+para i = 1; i <= numero; i++ {
+    fatorial = fatorial * i
+}
+
+escreva("O fatorial de ", numero, " é: ", fatorial)
