@@ -1,0 +1,14 @@
+var principal, taxaDeJuros, tempo, montante float64
+
+leia("Digite o valor principal: ")
+leia(&principal)
+
+leia("Digite a taxa de juros (em decimal): ")
+leia(&taxaDeJuros)
+
+leia("Digite o tempo (em anos): ")
+leia(&tempo)
+
+montante = principal * (1 + taxaDeJuros) ** tempo
+
+escreva("O montante após ", tempo, " anos com juros compostos é: ", montante)
