@@ -1,0 +1,18 @@
+var celsius, fahrenheit float64
+var escolha int
+
+leia("Digite a temperatura em Celsius: ")
+leia(&celsius)
+
+leia("Escolha 1 para converter para Fahrenheit ou 2 para converter para Celsius: ")
+leia(&escolha)
+
+se escolha == 1 {
+    fahrenheit = (celsius * 9/5) + 32
+    escreva("A temperatura em Fahrenheit é: ", fahrenheit)
+} senão se escolha == 2 {
+    celsius = (fahrenheit - 32) * 5/9
+    escreva("A temperatura em Celsius é: ", celsius)
+} senão {
+    escreva("Escolha inválida.")
+}
