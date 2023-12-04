@@ -1,0 +1,26 @@
+var lista [10]int
+var elemento, i int
+var encontrado bool
+
+faça para i = 0; i < 10; i++ {
+    leia("Digite o elemento ", i+1, " da lista: ")
+    leia(&lista[i])
+}
+
+leia("Digite o elemento que deseja encontrar: ")
+leia(&elemento)
+
+encontrado = falso
+
+para i = 0; i < 10; i++ {
+    se lista[i] == elemento {
+        encontrado = verdadeiro
+        escreva("Elemento encontrado na posição ", i+1)
+        pausa
+        pare
+    }
+}
+
+se encontrado == falso {
+    escreva("Elemento não encontrado na lista.")
+}
