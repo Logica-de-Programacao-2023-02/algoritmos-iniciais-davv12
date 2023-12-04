@@ -1,0 +1,18 @@
+var quantidade, soma, numero, media float64
+
+leia("Digite a quantidade de números: ")
+leia(&quantidade)
+
+faça para i = 1; i <= quantidade; i++ {
+    leia("Digite o número ", i, ": ")
+    leia(&numero)
+    soma = soma + numero
+}
+
+se quantidade > 0 {
+    media = soma / quantidade
+    escreva("A média é: ", media)
+} senão {
+    escreva("Não é possível calcular a média de zero números.")
+}
+
